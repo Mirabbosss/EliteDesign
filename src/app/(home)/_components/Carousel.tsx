@@ -65,7 +65,7 @@ export const Carousel = () => {
         }}
         className="h-[calc(100vh-135px)] bg-cover bg-center w-full relative"
       >
-        <div className="max-w-[820px] bg-[#000000E5] h-[108px] flex justify-between gap-5 absolute bottom-[35px] right-0 py-5">
+        <div className="max-w-[820px] bg-[#000000E5] h-[130px] sm:h-[108px] flex justify-between gap-5 absolute bottom-[35px] right-0 py-5">
           <span
             className="w-[100px] h-1 bg-[#765579] absolute top-0"
             style={{
