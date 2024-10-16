@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../fonts/Exo2-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Exo2', sans-serif;
+}
+
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+.slider {
+	overflow:hidden;
+
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		position: absolute;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+
+}
+
+ /* Chrome, Safari, Edge, Opera */
+ input[type="number"]::-webkit-outer-spin-button,
+ input[type="number"]::-webkit-inner-spin-button {
+	 -webkit-appearance: none;
+	 margin: 0;
+ }
+
+ /* Firefox */
+ input[type="number"] {
+	 -moz-appearance: textfield;
+ }
