@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import Image from 'next/image';
-import AboutIntroImg from '../../../../public/images/about-bottom-img-1.png';
+import AboutIntroImg from '../../../../public/images/about-intro-img.png';
 import BottomFirstImg from '../../../../public/images/about-bottom-img-1.png';
 import BottomSecondImgFirst from '../../../../public/images/about-bottom-img-2-1.png';
 import BottomSecondImgSecond from '../../../../public/images/about-bottom-img-2-2.png';
